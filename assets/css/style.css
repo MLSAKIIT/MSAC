@@ -58,7 +58,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .back-to-top i:hover {
-  background: #57aae1;
+  background: #0000cf;
   color: #fff;
 }
 
@@ -480,7 +480,7 @@ section {
 }
 
 .section-bg {
-  background-color: #f7fbfe;
+  background-color: #f3f9fd;
 }
 
 .section-title {
@@ -500,7 +500,7 @@ section {
   content: '';
   width: 50px;
   height: 2px;
-  background: #3498db;
+  background:#5d16d9;
   display: inline-block;
 }
 
@@ -520,7 +520,7 @@ section {
 # Clients
 --------------------------------------------------------------*/
 .clients {
-  background: #f3f9fd;
+  background: #e8eeff;
   padding: 10px 0;
   text-align: center;
 }
@@ -532,7 +532,7 @@ section {
 }
 
 .clients img {
-  width: 50%;
+  width: 57%;
   -webkit-filter: grayscale(100);
   filter: grayscale(100);
   transition: all 0.4s ease-in-out;
@@ -548,7 +548,7 @@ section {
 
 @media (max-width: 768px) {
   .clients img {
-    width: 40%;
+    width: 46%;
   }
 }
 
@@ -712,7 +712,7 @@ section {
 .services .icon-box::before {
   content: '';
   position: absolute;
-  background: #e1f0fa;
+  background: #bafeff;
   right: -60px;
   top: -40px;
   width: 100px;
@@ -723,7 +723,7 @@ section {
 }
 
 .services .icon-box:hover::before {
-  background: #3498db;
+  background: #5d16d9;
   right: 0;
   top: 0;
   width: 100%;
@@ -739,7 +739,7 @@ section {
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  background: #3498db;
+  background: #0000cf;
   transition: all 0.3s ease-in-out;
 }
 
@@ -774,7 +774,7 @@ section {
 }
 
 .services .icon-box:hover .icon i {
-  color: #3498db;
+  color: #0000cf;
 }
 
 /*--------------------------------------------------------------
@@ -869,11 +869,11 @@ section {
 }
 
 .features .icon-box h3 a:hover {
-  color: #3498db;
+  color: #0000cf;
 }
 
 .features .icon-box:hover {
-  background: #eef7fc;
+  background: #bafeff;
 }
 
 /*--------------------------------------------------------------
@@ -999,7 +999,7 @@ section {
 
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
   color: #fff;
-  background: #3498db;
+  background: #0000cf;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -1076,7 +1076,7 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  color: #3498db;
+  color: #0000cf;
 }
 
 .portfolio .portfolio-wrap:hover::before {
@@ -1129,7 +1129,7 @@ section {
 }
 
 .team .member .social a:hover {
-  color: #3498db;
+  color: #002aff;
 }
 
 .team .member .social i {
@@ -1163,7 +1163,7 @@ section {
 }
 
 .team .member:hover .social {
-  opacity: 1;
+  opacity: 2;
 }
 
 /*--------------------------------------------------------------
@@ -1545,7 +1545,7 @@ section {
 }
 
 .portfolio-details .portfolio-details-carousel .owl-dot.active {
-  background-color: #3498db !important;
+  background-color: #5d16d9 !important;
 }
 
 .portfolio-details .portfolio-info {
@@ -1606,5 +1606,5 @@ section {
 }
 
 #footer .footer-links a:hover {
-  color: #3498db;
+  color: #5d16d9;
 }

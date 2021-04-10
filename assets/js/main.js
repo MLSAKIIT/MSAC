@@ -125,15 +125,6 @@
 
   activeDarkTheme.addEventListener('click', function() {
     document.getElementById('theme-style').href = 'assets/css/dark.css';
-
-  //   $(window).scroll(function() {
-  //     if ($(window).scrollTop() > 10) {
-  //         $('#header').style.boxShadow = ;
-  //     } else {
-  //         $('#header').removeClass('floatingNav');
-  //     }
-  // });
-
     localStorage.setItem('theme', "dark");
   });
 

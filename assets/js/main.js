@@ -133,6 +133,18 @@
     localStorage.setItem('theme', "light");
   });
 
+  $(".dark").on("click touchstart", function(){
+    console.log("dark touched");
+    document.getElementById('theme-style').href = 'assets/css/dark.css';
+    localStorage.setItem('theme', "dark");
+  });
+
+  $(".light").on("click touchstart", function(){
+    console.log("light touched");
+    document.getElementById('theme-style').href = 'assets/css/style.css';
+    localStorage.setItem('theme', "light");
+  });
+
   // Toggle .header-scrolled class to #header when page is scrolled
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {

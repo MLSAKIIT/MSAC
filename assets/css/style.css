@@ -9,10 +9,21 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+:root{
+    --initialWhite:#fff;
+    --headingColor:#000;
+    --headingTwoColor:#484848;
+    --pColor:#000;
+    --clientsSectionColor: #e8eeff;
+    --navLinksColor:#555555;
+    --featuresBox:#fff;
+    --iconBoxShadow:0 0 29px 0 rgba(68, 88, 144, 0.25);
+}
 
 body {
     font-family: "Open Sans", sans-serif;
     color: #444444;
+    background-color: var(--initialWhite);
 }
 
 a {
@@ -31,7 +42,12 @@ h3,
 h4,
 h5,
 h6 {
+    color: var(--headingColor);
     font-family: "Raleway", sans-serif;
+}
+
+p{
+    color: var(--pColor) !important;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -96,7 +112,7 @@ h6 {
 #header.header-scrolled {
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
     padding: 15px 0;
-    background: #fff;
+    background: var(--initialWhite);
 }
 
 #header .logo h1 {
@@ -110,7 +126,7 @@ h6 {
 
 #header .logo h1 a,
 #header .logo h1 a:hover {
-    color: #222222;
+    color: var(--headingColor);
     text-decoration: none;
 }
 
@@ -122,7 +138,7 @@ h6 {
 
 @media (max-width: 768px) {
     #header {
-        background: #fff;
+        background: var(--initialWhite);
     }
     #header .logo h1 {
         font-size: 28px;
@@ -153,7 +169,7 @@ h6 {
 .nav-menu a {
     display: block;
     position: relative;
-    color: #555555;
+    color: var(--navLinksColor);
     padding: 8px 0 12px 25px;
     transition: 0.3s;
     font-size: 14px;
@@ -168,8 +184,8 @@ h6 {
 }
 
 .nav-menu .get-started a {
-    background: #222222;
-    color: #fff;
+    background: var(--headingColor);
+    color: var(--initialWhite);
     border-radius: 50px;
     margin: 0 0 0 30px;
     padding: 10px 25px;
@@ -177,7 +193,7 @@ h6 {
 
 .nav-menu .get-started a:hover {
     background: #57aae1;
-    color: #fff;
+    color: var(--initialWhite);
 }
 
 .nav-menu .drop-down ul {
@@ -189,7 +205,7 @@ h6 {
     opacity: 0;
     visibility: hidden;
     padding: 10px 0;
-    background: #fff;
+    background: var(--initialWhite);
     box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
     transition: ease all 0.3s;
     border-radius: 5px;
@@ -210,7 +226,7 @@ h6 {
     padding: 10px 20px;
     font-size: 14px;
     text-transform: none;
-    color: #222222;
+    color: var(--headingColor);
 }
 
 .nav-menu .drop-down ul a:hover,
@@ -278,7 +294,7 @@ h6 {
 }
 
 .mobile-nav-toggle i {
-    color: #222222;
+    color: var(--headingColor);
 }
 
 .mobile-nav {
@@ -289,7 +305,7 @@ h6 {
     left: 15px;
     z-index: 9999;
     overflow-y: auto;
-    background: #fff;
+    background: var(--initialWhite);
     transition: ease-in-out 0.2s;
     opacity: 0;
     visibility: hidden;
@@ -306,7 +322,7 @@ h6 {
 .mobile-nav a {
     display: block;
     position: relative;
-    color: #222222;
+    color: var(--headingColor);
     padding: 10px 20px;
     font-weight: 500;
     outline: none;
@@ -326,7 +342,7 @@ h6 {
 
 .mobile-nav .get-started a {
     background: #3498db;
-    color: #fff;
+    color: var(--initialWhite);
     border-radius: 50px;
     margin: 0 15px;
     padding: 10px 30px;
@@ -335,7 +351,7 @@ h6 {
 
 .mobile-nav .get-started a:hover {
     background: #57aae1;
-    color: #fff;
+    color: var(--initialWhite);
 }
 
 .mobile-nav .drop-down>a:after {
@@ -386,7 +402,7 @@ h6 {
 }
 
 .mobile-nav-active .mobile-nav-toggle i {
-    color: #fff;
+    color: var(--initialWhite);
 }
 
 
@@ -405,11 +421,11 @@ h6 {
     font-size: 48px;
     font-weight: 700;
     line-height: 56px;
-    color: black;
+    color: var(--headingColor);
 }
 
 #hero h2 {
-    color: #484848;
+    color: var(--headingTwoColor);
     margin-bottom: 50px;
     font-size: 24px;
 }
@@ -524,7 +540,7 @@ section {
     font-weight: bold;
     text-transform: uppercase;
     position: relative;
-    color: #222222;
+    color: var(--headingColor);
 }
 
 .section-title h2::before,
@@ -574,7 +590,7 @@ section {
 }
 
 .clients {
-    background: #e8eeff;
+    background: var(--clientsSectionColor);
     padding: 10px 0;
     text-align: center;
 }
@@ -688,7 +704,7 @@ section {
 .counts .content h3 {
     font-weight: 700;
     font-size: 34px;
-    color: #222222;
+    color: var(--headingColor);
 }
 
 .counts .content p {
@@ -712,7 +728,7 @@ section {
     line-height: 30px;
     display: block;
     font-weight: 700;
-    color: #222222;
+    color: var(--headingColor);
     margin-left: 50px;
 }
 
@@ -762,8 +778,8 @@ section {
     padding: 30px;
     position: relative;
     overflow: hidden;
-    background: #fff;
-    box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+    background: var(--initialWhite);
+    box-shadow: var(--iconBoxShadow);
     transition: all 0.3s ease-in-out;
     border-radius: 8px;
     z-index: 1;
@@ -816,7 +832,7 @@ section {
 }
 
 .services .title a {
-    color: #111;
+    color: var(--headingColor);
 }
 
 .services .description {
@@ -913,7 +929,7 @@ section {
     display: flex;
     align-items: center;
     padding: 20px;
-    background: #f6f6f6;
+    background: var(--featuresBox);
     transition: ease-in-out 0.3s;
 }
 
@@ -932,7 +948,7 @@ section {
 }
 
 .features .icon-box h3 a {
-    color: #222222;
+    color: var(--headingColor);
     transition: ease-in-out 0.3s;
 }
 
@@ -941,7 +957,7 @@ section {
 }
 
 .features .icon-box:hover {
-    background: #bafeff;
+    background: #d0e6e6;
 }
 
 
@@ -960,7 +976,7 @@ section {
     min-height: 200px;
     box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
     position: relative;
-    background: #fff;
+    background: var(--initialWhite);
 }
 
 .testimonials .testimonial-item .testimonial-img {
@@ -975,12 +991,12 @@ section {
     font-size: 18px;
     font-weight: bold;
     margin: 10px 0 5px 0;
-    color: #111;
+    color: var(--headingColor);
 }
 
 .testimonials .testimonial-item h4 {
     font-size: 14px;
-    color: #999;
+    color: var(--headingTwoColor);
     margin: 0;
 }
 
@@ -1124,7 +1140,7 @@ section {
 
 .portfolio .portfolio-wrap .portfolio-info h4 {
     font-size: 20px;
-    color: #fff;
+    color: var(--initialWhite);
     font-weight: 600;
 }
 
@@ -1171,12 +1187,16 @@ section {
 # Team
 --------------------------------------------------------------*/
 
+.team{
+    background-color: var(--initialWhite);
+}
+
 .team .member {
     margin-bottom: 20px;
     overflow: hidden;
     text-align: center;
     border-radius: 5px;
-    background: #fff;
+    background: var(--initialWhite);
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -1222,7 +1242,7 @@ section {
     font-weight: 700;
     margin-bottom: 5px;
     font-size: 18px;
-    color: #222222;
+    color: var(--headingColor);
 }
 
 .team .member .member-info span {
@@ -1264,7 +1284,7 @@ section {
     margin-top: 15px;
     font-size: 18px;
     font-weight: 600;
-    color: #222222;
+    color: var(--headingColor);
 }
 
 .pricing .box h4 {
@@ -1392,7 +1412,7 @@ section {
     line-height: 1;
     font-weight: 700;
     letter-spacing: 1px;
-    color: #222222;
+    color: var(--headingColor);
 }
 
 .contact .contact-about p {
@@ -1549,7 +1569,7 @@ section {
 
 .breadcrumbs {
     padding: 15px 0;
-    background: #f8f8f8;
+    background: var(--initialWhite);
     min-height: 40px;
     margin-top: 86px;
 }
@@ -1675,21 +1695,21 @@ section {
 --------------------------------------------------------------*/
 
 #footer {
-    background: #fff;
+    background: var(--initialWhite);
     box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
     padding: 30px 0;
-    color: #222222;
+    color: var(--headingColor);
     font-size: 14px;
 }
 
 #footer .credits {
     font-size: 13px;
     padding-top: 5px;
-    color: #222222;
+    color: var(--headingColor);
 }
 
 #footer .footer-links a {
-    color: #222222;
+    color: var(--headingColor);
     padding-left: 15px;
 }
 

@@ -1,1 +1,8 @@
-MSAC KIIT Website
+# MSAC KIIT Website
+FORM FIELDS
+## Required fields
+NAME
+EMAIL ID
+PHONE NUMBER
+# optional
+EVENTS => DROP DOWN 
